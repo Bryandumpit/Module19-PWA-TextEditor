@@ -10,10 +10,11 @@ module.exports = () => {
   return {
     mode: 'production',
     entry: {
-      main: './src/js/index.js'
+      main: './src/js/index.js',
+      install: './src/js/install.js'
     },
     output: {
-      filename: 'bundle.js',
+      filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [

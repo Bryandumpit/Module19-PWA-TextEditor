@@ -8,8 +8,8 @@ window.addEventListener('beforeinstallprompt', (event) => {
 
     butInstall.addEventListener('click', ()=> {
         event.prompt();
-        installBtn.setAttribute('disabled', true);
-        installBtn.textContent = 'Installed!';
+        butInstall.setAttribute('disabled', true);
+        butInstall.textContent = 'Installed!';
     })
 
 });
